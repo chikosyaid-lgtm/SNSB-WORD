@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNSB WORLD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<input type="checkbox" id="cart-toggle" hidden>
+<input type="checkbox" id="p1" class="product-check" hidden>
+<input type="checkbox" id="p2" class="product-check" hidden>
+<input type="checkbox" id="p3" class="product-check" hidden>
+<input type="checkbox" id="p4" class="product-check" hidden>
+
+
+<header>
+    <h2>SNSB WORLD<span>.</span></h2>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#lookbook">LOOKBOOKS</a>
+    </nav>
+
+    <div class="header-right">
+        <label for="cart-toggle" class="bag-button">
+            BAG 
+        </label>
+    </div>
+</header>
+
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <p>NEW ARRIVAL COLLECTION</p>
+        <h1>DEFINE YOUR<br>OWN STYLE.</h1>
+        <a href="#shop">SHOP NOW ↗</a>
+    </div>
+</section>
+
+
+<section class="collection" id="collection">
+    <p class="subtitle">EXPLORE SNSB WORLD</p>
+    <h2>OUR COLLECTION</h2>
+
+    <div class="collection-grid">
+        <div class="collection-card">
+            <img src="kaos.jpg">
+        </div>
+
+        <div class="collection-card">
+            <img src="celana.jpg">
+        </div>
+
+        <div class="collection-card">
+            <img src="sweater.jpg">
+        </div>
+    </div>
+</section>
+
+
+<section class="shop" id="shop">
+    <p class="subtitle">LATEST PRODUCTS</p>
+    <h2>NEW ARRIVALS</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="kaosnew.jpg">
+            <p>T-SHIRT</p>
+            <h3>Kategori Terbatas</h3>
+            <strong>Rp 189.000</strong>
+            <label for="p1" class="add-button">ADD TO CART +</label>
+        </div>
+
+        <div class="product">
+            <img src="celananew.jpg">
+            <p>PANTS</p>
+            <h3>Kategori Terbatas</h3>
+            <strong>Rp 219.000</strong>
+            <label for="p2" class="add-button">ADD TO CART +</label>
+        </div>
+
+        <div class="product">
+            <img src="swaternew.jpg">
+            <p>SWEATER</p>
+            <h3>Kategori Terbatas</h3>
+            <strong>Rp 329.000</strong>
+            <label for="p3" class="add-button">ADD TO CART +</label>
+        </div>
+
+        <div class="product">
+            <img src="topinew.jpg   ">
+            <p>HAT</p>
+            <h3>Kategori Terbatas</h3>
+            <strong>Rp 459.000</strong>
+            <label for="p4" class="add-button">ADD TO CART +</label>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="lookbook" id="lookbook">
+    <p>STYLE YOURSELF</p>
+    <h1>MORE THAN<br>JUST FASHION.</h1>
+    <a href="#shop">DISCOVER MORE ↗</a>
+</section>
+
+
+<footer>
+    <h2>SNSB WORLD.</h2>
+    <p>Redefining Streetwear Culture.</p>
+    <div>
+        <a href="#home">HOME</a>
+        <a href="#shop">SHOP</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#lookbook">LOOKBOOK</a>
+    </div>
+    <small>© 2026 SNSB WORLD. ALL RIGHTS RESERVED.</small>
+</footer>
+
+
+<label for="cart-toggle" class="overlay"></label>
+
+
+<div class="cart-drawer">
+
+    <div class="cart-header">
+        <h2>YOUR CART 🛒</h2>
+        <label for="cart-toggle">✕</label>
+    </div>
+
+    <div class="cart-items">
+
+        <div class="cart-item item-1">
+            <img src="kaosnew.jpg">
+            <div>
+                <h4>Essential Oversized Tee</h4>
+                <p>Rp 189.000</p>
+                <label for="p1">REMOVE</label>
+            </div>
+        </div>
+
+        <div class="cart-item item-2">
+            <img src="celananew.jpg">
+            <div>
+                <h4>Urban Graphic Shirt</h4>
+                <p>Rp 219.000</p>
+                <label for="p2">REMOVE</label>
+            </div>
+        </div>
+
+        <div class="cart-item item-3">
+            <img src="swaternew.jpg">
+            <div>
+                <h4>Classic Cargo Pants</h4>
+                <p>Rp 329.000</p>
+                <label for="p3">REMOVE</label>
+            </div>
+        </div>
+
+        <div class="cart-item item-4">
+            <img src="topinew.jpg">
+            <div>
+                <h4>Streetwear Jacket</h4>
+                <p>Rp 459.000</p>
+                <label for="p4">REMOVE</label>
+            </div>
+        </div>
+
+        <p class="empty-cart">Your cart is empty.</p>
+
+    </div>
+
+    <div class="cart-footer">
+        <h3>CHECKOUT</h3>
+        <p>Continue shopping to complete your selection.</p>
+        <a href="#shop">CONTINUE SHOPPING ↗</a>
+    </div>
+
+</div>
+
+<div class="checkout-container">
+
+        <h1>SNSB WORLD.</h1>
+        <h2>Checkout Form</h2>
+        <p>Lengkapi data untuk menyelesaikan pesanan.</p>
+
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input
+                    type="text"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                    minlength="3">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="contoh@email.com"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Nomor HP</label>
+                <input
+                    type="tel"
+                    name="nomor"
+                    placeholder="08xxxxxxxxxx"
+                    pattern="[0-9]{10,13}"
+                    title="Nomor HP harus terdiri dari 10 sampai 13 angka"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Alamat Lengkap</label>
+                <textarea
+                    name="alamat"
+                    placeholder="Masukkan alamat lengkap"
+                    minlength="10"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Pilih Produk</label>
+                <select name="produk" required>
+                    <option value="">-- Pilih Produk --</option>
+                    <option value="T-Shirt">T-Shirt</option>
+                    <option value="Pants">Pants</option>
+                    <option value="Sweater">Sweater</option>
+                    <option value="Hat">Hat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jumlah Pembelian</label>
+                <input
+                    type="number"
+                    name="jumlah"
+                    min="1"
+                    max="99"
+                    placeholder="Masukkan jumlah"
+                    required>
+            </div>
+
+            <button type="submit">
+                SUBMIT ORDER
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
